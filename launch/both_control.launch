@@ -1,0 +1,17 @@
+<launch>
+
+  <node pkg="turtlesim" name="sim" type="turtlesim_node">
+  </node>
+
+  <node pkg="imu_turtle" name="lemn_turtle" type="lemn_turtle.py">
+    <remap from="/turtle1/cmd_vel" to="/turtle1/vel_1"/>
+  </node>
+
+  <node pkg="imu_turtle" name="phone_turtle" type="phone_turtle.py">
+    <remap from="/turtle1/cmd_vel" to="/turtle1/vel_2"/>
+  </node>
+
+  <node pkg="imu_turtle" name="velsum_turtle" type="velsum_turtle.py">
+  </node>
+
+</launch>

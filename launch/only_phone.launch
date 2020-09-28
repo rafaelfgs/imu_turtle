@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="turtlesim" name="sim" type="turtlesim_node">
+  </node>
+
+  <node pkg="imu_turtle" name="phone_turtle" type="phone_turtle.py">
+  </node>
+
+</launch>
